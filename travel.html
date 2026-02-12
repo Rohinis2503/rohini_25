@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aero Travel</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Custom Animations */
+
+        /* Hero Fade + Zoom */
+        @keyframes fadeZoom {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        .hero-text {
+            animation: fadeZoom 1.5s ease-out forwards;
+        }
+
+        /* Card Hover Lift */
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: 0.3s ease;
+        }
+
+        /* Pricing Hover Effect */
+        .pricing-card:hover {
+            border-color: orange;
+            transition: 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-sky-50 text-gray-800">
+
+</body>
+</html>
+<!-- Header -->
+<header class="bg-sky-600 text-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold">Aero Travel</h1>
+        <nav class="space-x-6">
+            <a href="#" class="hover:text-orange-300 transition">Home</a>
+            <a href="#destinations" class="hover:text-orange-300 transition">Destinations</a>
+            <a href="#packages" class="hover:text-orange-300 transition">Packages</a>
+            <a href="#contact" class="hover:text-orange-300 transition">Contact</a>
+        </nav>
+    </div>
+</header>
+<!-- Hero Section -->
+<section class="h-screen bg-cover bg-center flex items-center justify-center text-center"
+    style="background-image: url('https://cdn.magicdecor.in/com/2024/06/07161054/Wanderlust-Dream-Wallpaper-Mural-for-Wall-710x488.jpg');">
+
+    <div class="bg-black bg-opacity-50 p-10 rounded-lg">
+        <h2 class="text-4xl md:text-6xl text-white font-bold hero-text">
+            Collect And Cherish The Moments With Us
+        </h2>
+        <p class="text-white mt-4">Your adventure begins here ✈</p>
+    </div>
+</section>
+<!-- Destinations -->
+<section id="destinations" class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10 text-sky-700">
+        Featured Destinations
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+            <img src="https://static.independent.co.uk/2025/08/19/15/43/iStock-1547565308.jpeg?quality=75&width=1368&crop=3%3A2%2Csmart&trim=0%2C0%2C0%2C0&auto=webp" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold">Bali</h3>
+                <p class="mt-2 text-gray-600">Being its beautiful landscapes, unique heritage, and paradise-like beaches, all packed onto the archipelago.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+            <img src="https://scarletscribs.wordpress.com/wp-content/uploads/2017/07/161120-essaouira-morocco-1.jpg" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold">Morocco</h3>
+                <p class="mt-2 text-gray-600">Morocco is a land of rich history, breathtaking landscapes, and vibrant culture.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+            <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/GettyImages-1205111263-RS.jpg" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold">Mauritius</h3>
+                <p class="mt-2 text-gray-600">The mountain ranges of Mauritius are volcanic in origin and the island features a broken ring of rugged mountains and a lofty inland plateau area.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Packages -->
+<section id="packages" class="py-16 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-10 text-sky-700">
+        Travel Packages
+    </h2>
+
+    <div class="container mx-auto grid md:grid-cols-3 gap-8 px-4">
+
+        <!-- Basic -->
+        <div class="border-2 border-gray-300 p-6 rounded-xl pricing-card text-center">
+            <h3 class="text-xl font-bold mb-4">Basic</h3>
+            <p class="text-3xl font-bold text-sky-600">₹20,000</p>
+            <ul class="my-4 space-y-2">
+                <li>3 Days</li>
+                <li>Standard Hotel</li>
+                <li>City Tour</li>
+            </ul>
+            <button class="bg-sky-600 text-white px-6 py-2 rounded-full hover:bg-orange-500 transition">
+                Book Now
+            </button>
+        </div>
+
+        <!-- Premium (Best Value) -->
+        <div class="border-4 border-orange-500 p-6 rounded-xl shadow-xl pricing-card text-center bg-sky-50">
+            <h3 class="text-xl font-bold mb-4">Premium ⭐</h3>
+            <p class="text-3xl font-bold text-sky-600">₹70,000</p>
+            <ul class="my-4 space-y-2">
+                <li>5 Days</li>
+                <li>4-Star Hotel</li>
+                <li>All Tours Included</li>
+            </ul>
+            <button class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-sky-600 transition">
+                Book Now
+            </button>
+        </div>
+
+        <!-- Luxury -->
+        <div class="border-2 border-gray-300 p-6 rounded-xl pricing-card text-center">
+            <h3 class="text-xl font-bold mb-4">Luxury</h3>
+            <p class="text-3xl font-bold text-sky-600">₹1,00,000</p>
+            <ul class="my-4 space-y-2">
+                <li>7 Days</li>
+                <li>5-Star Resort</li>
+                <li>Private Guide</li>
+            </ul>
+            <button class="bg-sky-600 text-white px-6 py-2 rounded-full hover:bg-green-500 transition">
+                Book Now
+            </button>
+        </div>
+
+    </div>
+</section>
+<!-- Footer -->
+<footer id="contact" class="bg-sky-600 text-white text-center p-6 mt-10">
+    <p>📍 Krishnagiri, India</p>
+    <p>📞 +91 6317256925</p>
+    <p>✉ contact@aerotravel.com</p>
+
+    <div class="mt-4 space-x-4">
+        <a href="#" class="hover:text-orange-300 transition">Facebook</a>
+        <a href="#" class="hover:text-orange-300 transition">Instagram</a>
+        <a href="#" class="hover:text-orange-300 transition">Twitter</a>
+    </div>
+
+    <p class="mt-4 text-sm">&copy; 2026 Aero Travel. All Rights Reserved.</p>
+</footer>
